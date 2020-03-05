@@ -7,7 +7,7 @@ Simple To-Do List project.
 # Description
 
 This To-Do List site is a very simple to do list that starts off with some items filled in. 
-[To-Do List Site](https://captcalli.github.io/ToDoList/)
+[To-Do List Site](https://captcalli.github.io/ToDo/)
 
 ---
 
