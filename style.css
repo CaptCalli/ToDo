@@ -1,0 +1,136 @@
+/*font-family: 'Spartan', sans-serif;
+weight 400 and 700*/
+
+
+* {
+	box-sizing: border-box;
+	background: #120223;
+}
+
+body {
+	font-family: 'Spartan', sans-serif;
+}
+
+/* The look for the header */
+.header {
+	background-color: #8EFBE1;
+	padding: 30px 40px;
+	color: black;
+	text-align: center;
+}
+
+h2 {
+	background-color: #8EFBE1;
+	color: #120223;
+	font-weight: 700;
+	font-size: 34px;
+}
+
+/* Clearing floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Styling the input */
+input {
+	background: #fff;
+	margin: 0;
+	border: 1px solid #008C76;
+	border-radius: 0;
+	width: 60%;
+	padding: 10px;
+	float: left;
+	font-size: 16px;
+}
+
+/* Styling the "Make It So" Button */
+.makeItSo {
+	padding: 10px;
+	width: 20%;
+	background: #52C2AA;
+	color: white;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+}
+
+.makeItSo:hover {
+	background-color: #008C76;
+}
+
+/* removing the margins and padding from the list */
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #008C76;
+	font-weight: 400;
+	font-size: 18px;
+	transition: 0.2s;
+
+/* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* every other item has a different background color (slightly darker) */
+ul li:nth-child(odd) {
+	background: #52C2AA;
+}
+
+/* Different background on hovering */
+ul li:hover {
+	background: #4B325A;
+	color: white;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+	background: #120223;
+	color: rgba(255,255,255, 0.4);
+	text-decoration: line-through;
+}
+
+/* Add a checkmark where needed */
+ul li.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+
+
+/* The look for the Close button (x) */
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px;
+	color: white;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.close:hover {
+	background: #4B325A;
+	color: white;
+}
+
